@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1e1e1e;
+}
+
+.game-board{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    margin-top: 120px;
+    border: 1px solid black;
+    border-bottom: 10px solid #16697a;
+    background-image: url(../img/bg.png);
+    position: relative;
+    animation: background-animation 2s infinite linear;
+}
+
+.tank{
+    position: absolute;
+    bottom: -20px;
+    width: 280px;
+    animation: tank-animation  infinite linear 1.5s;
+}
+
+.megaman{
+    width: 120px;
+    position: absolute;
+    bottom: -14px;
+}
+
+.jump{
+    animation: jump infinite ease-out 500ms;
+}
+
+.score{
+    position: absolute;
+    left: 20px;
+    color: #fafafa;
+    font-style: italic;
+}
+
+@keyframes tank-animation{
+    from{
+        right: -280px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes jump{
+    0%{
+        bottom:-14px;
+    }
+    40%{
+        bottom: 200px;
+    }
+    50%{
+        bottom: 200px;
+    }
+    60%{
+        bottom: 200px;
+    }
+    100%{
+        bottom: -14px;
+    }
+}
+
+@keyframes background-animation{
+
+    from{
+        background-position: 83%  0 ;
+    }
+    to{
+        background-position: 0 0;
+    }
+
+}
+
