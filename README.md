@@ -1,2 +1,2 @@
-## Yu-Gi-Oh Jokenpô usando JS.
-
+## Megaman Fame usando JS.
+https://pedro-senatus.github.io/Megaman-Game/
